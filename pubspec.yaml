@@ -1,7 +1,7 @@
 name: flutter_snackbox
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+description: show snackBar made easy, display snackBar without buildContext with pure dart code.
+version: 1.0.1
+homepage: https://github.com/swarajkumarsingh/flutter_snackbox
 
 environment:
   sdk: '>=3.0.3 <4.0.0'

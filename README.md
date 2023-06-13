@@ -1,39 +1,51 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Flutter Snackbox
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+- show snackBar made easy, display snackBar without buildContext with pure dart code.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+1. Add the latest version of package to your pubspec.yaml (and run`dart pub get`):
+
+```yaml
+dependencies:
+  flutter_snackbox:
+```
+
+2. Import the package and use it in your Flutter App.
+
+```dart
+import 'package:flutter_approuter/flutter_snackbox.dart';
+```
+
+3. Add snackbarKey in Material App for snackBar without BuiltContext
+
+```dart
+ MaterialApp(
+   snackbarKey: snackbarKey,
+   ...
+ )
+```
+
+## Supported Devices
+
+- Android
+- IOS
+- Linux
+- Windows
+- Macos
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+- [x] ShowSnackBar **without BuildContext**
+  - [x] showSnackBar
 
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
-
-```dart
-const like = 'sample';
+## Example
+```
+    showSnackBar("<message>")
 ```
 
-## Additional information
+## Contributions
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+If you find a bug or want a feature, but don't know how to fix/implement it, please fill an issue. <br>
+<br>
+If you fixed a bug or implemented a feature, please send a pull request.

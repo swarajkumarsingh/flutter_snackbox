@@ -1,3 +1,11 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+* Init State
+
+## 1.0.0
+
+* Added snackBar implementation
+
+## 1.0.1
+
+* Updated README.md
