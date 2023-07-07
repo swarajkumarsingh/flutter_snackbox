@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'messages.dart';
+import 'package:flutter_snackbox/src/snackbar_platform_interface.dart';
 
 final GlobalKey<ScaffoldMessengerState> snackbarKey =
     GlobalKey<ScaffoldMessengerState>();
@@ -23,11 +22,6 @@ final GlobalKey<ScaffoldMessengerState> snackbarKey =
 /// ```dart
 /// showSnackBar(msg: "Snack bar");
 /// ```
-void showSnackBar(String msg) {
-  try {
-    final SnackBar snackBar = SnackBar(content: Text(msg));
-    snackbarKey.currentState?.showSnackBar(snackBar);
-  } catch (e, stackTrace) {
-    message.throwError(e: e, stackTrace: stackTrace);
-  }
+void showSnackBar(String message) {
+  SnackBarPlatform.instance.showSnackBar(message);
 }

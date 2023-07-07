@@ -1,6 +1,6 @@
 import 'package:flutter/services.dart';
 
-final message = _Message();
+final errorMessage = _Message();
 
 class _Message {
   String packageError = "PACKAGE_NAVIGATION_ERROR";

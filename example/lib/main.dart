@@ -11,7 +11,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Snackbox Demo',
+      title: 'Flutter Snackbar Plus Demo',
+      /// [snackbarKey] - make sure to add [snackbarKey], else the snackBar will not show up
+      scaffoldMessengerKey: snackbarKey,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.red),
         useMaterial3: true,
@@ -26,13 +28,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: ElevatedButton(
-        onPressed: () {
-          /// showSnackBar(String message) - show snackbar without BuildContext
-          showSnackBar("HELLO WORLD");
-        },
-        child: const Icon(Icons.slideshow_rounded),
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              /// [showSnackBar(String message)] - show snackbar without BuildContext
+              showSnackBar("HELLO WORLD");
+            },
+            child: const Icon(Icons.slideshow_rounded),
+          ),
+        ),
       ),
     );
   }
