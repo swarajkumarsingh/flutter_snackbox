@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Snackbar Plus Demo',
+      debugShowCheckedModeBanner: false,
       /// [snackbarKey] - make sure to add [snackbarKey], else the snackBar will not show up
       scaffoldMessengerKey: snackbarKey,
       theme: ThemeData(

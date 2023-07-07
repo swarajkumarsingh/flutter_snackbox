@@ -9,3 +9,7 @@
 ## 1.0.1
 
 * Added Example Folder
+
+## 2.0.0
+
+* Implemented new code architecture
